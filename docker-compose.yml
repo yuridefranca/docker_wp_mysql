@@ -32,7 +32,7 @@ services:
         image: wordpress
         restart: always
         volumes:
-            - ./:/var/www/html
+            - ./www/:/var/www/html
         environment:
             WORDPRESS_DB_HOST: "${WORDPRESS_DB_HOST}"
             WORDPRESS_DB_NAME: "${WORDPRESS_DB_NAME}"
